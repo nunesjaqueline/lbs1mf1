@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/* CSS Document */
+
+h1, h2, h3 {
+  font-family: MD Primer Bold,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
+}
+
+p {
+  font-family: Blanco, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.5;
+}
+
+
+.main {
+  width: 80vw;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #30303a;
+}
+
+.top {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 2rem;
+  background-color: #fff001;
+  color: #30303a;
+}
+
+.columns {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.col-1, .col-2, .col-3 {
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.col-1 {
+  margin-right: 0;
+  background-color: #ff0101;
+}
+
+.col-2 {
+  background-color: #0101fd;
+}
+
+.col-3 {
+  background-color: 	#f9f9f9;
+}
+
+.footer {
+  width: 100%;
+  padding: 2rem;
+  background-color: #fff001;
+  color: #30303a;
+}
+
+
+@media screen and (max-width: 768px){
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

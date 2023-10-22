@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Float</title>
+	<link rel="stylesheet" href="../css/float.css" type="text/css">
+</head>
+
+<body>
+	
+	<div class="header">
+		<div class="nav-wrapper">
+
+			<h1 id="nav-title"><a href="#">1MF1 - Herbst 2023</a></h1>
+	<!--
+			<div class="logo">
+				<img src="../bilder/navi-logo.svg" alt="logo navi" width="150">
+			</div>
+	-->
+			<div class="nav-bar">
+			<ul>
+				<li><a href="./textuebung.html">Woche #1</a></li>
+				<li><a href="./float.html">Woche #2</a></li>
+				<li><a href="./bilder.html">Woche #3</a></li>
+				<li><a href="./pilatus-svg.html">Woche #4</a></li>
+			</ul>
+			</div>
+
+		</div>
+
+		<div class="bee">
+			<img src="../bilder/bee.png" alt="Biene" width="100">
+		</div>
+
+	</div>
+	
+	<div class="main">
+		 <div class="top">
+			<h3>An interesting conversation came up at work the other day: Should we use the CSS float property now that we have CSS Grid and Flexbox?  </h3>
+		   <h1>Is CSS float deprecated?
+		   </h1>
+		 </div>
+		 <div class="columns">
+			<div class="col-1">
+				<h2>The short answer</h2>
+				<p>No! Well, mostly. I’d only use it today for wrapping text around images, though and I’d avoid using float entirely for layouts.</p>
+			</div>
+		 <div class="col-2">
+			<h2>
+			  The longer, more annoying answer
+			</h2>
+			<p>
+			  Before flexbox and grid, we had to use the CSS float property to make grids and layouts. In fact, it was the first thing I learned about web design. On one hot summer afternoon I cracked open a copy of Designing with Web Standards by Jeffrey Zeldman and then moved a tiny red div with float: right. It was magic. There was power in the float.
+			</p>
+			<p>
+			  But using float to build complex layouts was always a hack: it was only really designed to let text wrap around an image.
+			</p>
+		  </div>
+		  <div class="col-3">
+			<h2>
+			  The problems with float
+			</h2>
+			<p>
+			  The problems with float begin when we try to build giant layouts and magazine-style grids. But that’s what we had to do since there were no alternatives back then like we do today.
+			</p>
+		  </div>
+		  </div>
+		  <div class="footer">
+				<h2>How to fix the problem</h2>
+				<p>
+				  One problem with the float property is that you’d have to wrap floated elements with something called a <strong><em>clearfix</em></strong> that looked like this:
+				</p>
+				<h3>HTML</h3>
+				<pre rel="HTML" class="wp-block-csstricks-code-block  language-html" data-line=""><code markup="tt" class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>clearfix<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+			  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>float-left<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Column<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+			  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>float-left<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Column<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+			  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>float-left<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Column<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+
+			<h3>CSS</h3>
+				<pre rel="CSS" class="wp-block-csstricks-code-block  language-css" data-line=""><code markup="tt" class=" language-css"><span class="token selector">clearfix<span class="token pseudo-element">:after</span></span> <span class="token punctuation">{</span>
+			  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">;</span>
+			  <span class="token property">display</span><span class="token punctuation">:</span> table<span class="token punctuation">;</span>
+			  <span class="token property">clear</span><span class="token punctuation">:</span> both<span class="token punctuation">;</span>
+			<span class="token punctuation">}</span></code></pre>
+		  </div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+/* CSS Document */
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Rubik', sans-serif;
+}
+
+h1 {
+	font-weight: 100;
+	font-size: 3rem;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+.nav-wrapper {
+	margin: 0 auto;
+	max-width: 1670px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;  
+	align-items: center;
+	padding: 20px 50px;
+/*	background-color: #3c345b;*/
+	border-bottom: 2px solid #3c345b;
+/*	box-shadow: 0 1px 8px #ddd;*/
+	text-transform: uppercase;
+}
+
+.bee {
+	position: absolute;
+	left: 33rem;
+	top: 2rem;
+	right: 75%;
+	width: 10px;
+	z-index: 10;
+}
+
+
+
+#nav-title {
+    margin-right: auto;
+    font-size: 1.5em;
+}
+
+.nav-wrapper li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-wrapper a {
+    text-decoration: none;
+    color: #3c345b;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-wrapper a:hover {
+    color: #0b0132;
+}
+
+.nav-wrapper a:visited {
+	color: #3c345b;
+}
+
+.nav-bar a:hover {
+	color: #0b0132;
+}
+
+.content {
+	margin: 0 auto;
+	width: 60vw;
+}

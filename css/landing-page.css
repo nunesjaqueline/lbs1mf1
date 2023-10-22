@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.hero-wrapper {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero-wrapper::before {
+	content: "";
+	position: absolute; 
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url("../bilder/hero.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.hero-content {
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	color: #000000;
+	text-align: center;
+	margin: 0.65rem;
+}
+
+.hero-title {
+	font-size: 3rem;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.hero-subtitle {
+	font-size: 2rem;
+	font-weight: 200;
+	margin-top: 1rem;
+}
+
+button {
+	border: 1px solid #fff;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #fff;
+	font-size: 1rem;
+	font-weight: 100;
+	padding: 1rem;	
+}
+
+button:hover {
+	background-color: #EBBABB;
+	transition: all .5s ease-in-out;
+}
