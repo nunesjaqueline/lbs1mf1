@@ -16,6 +16,13 @@ h1 {
 	font-family: 'Montserrat', sans-serif;
 }
 
+.header {
+	top: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+}
+
 .nav-wrapper {
 	margin: 0 auto;
 	max-width: 1670px;
@@ -24,9 +31,9 @@ h1 {
 	justify-content: flex-end;  
 	align-items: center;
 	padding: 20px 50px;
-/*	background-color: #3c345b;*/
+	background-color: #fff;
 	border-bottom: 2px solid #3c345b;
-/*	box-shadow: 0 1px 8px #ddd;*/
+	box-shadow: 0 1px 8px #ddd;
 	text-transform: uppercase;
 }
 
@@ -91,11 +98,10 @@ h1 {
 	z-index: -1;
 }
 
-
-
-
 .hero {
-	margin: 0 auto;
+	margin-top: 10rem;
+	margin-left:  auto;
+	margin-right: auto;
 	background-image: url("../bilder/apfel.png");
 	background-repeat: repeat;
 	width: 100%;

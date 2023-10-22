@@ -10,9 +10,77 @@ p {
   line-height: 1.5;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-wrapper {
+	margin: 0 auto;
+  width: 100%;
+	max-width: 1670px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;  
+	align-items: center;
+	padding: 20px 50px;
+  background-color: #fff;
+	box-shadow: 0 1px 8px #ddd;
+	border-radius: 1rem;
+	text-transform: uppercase;
+}
+
+.bee {
+	position: absolute;
+	left: 33rem;
+	top: 2rem;
+	right: 75%;
+	width: 10px;
+	z-index: 10;
+}
+
+
+
+#nav-title {
+  margin-right: auto;
+  font-size: 1.5em;
+}
+
+.nav-wrapper li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 500;
+}
+
+.nav-wrapper a {
+  text-decoration: none;
+  color: #0b0132;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-wrapper a:hover {
+    /* color: #0b0132; */
+	color: #6100ff;
+}
+
+.nav-wrapper a:visited {
+	color: #0b0132;
+}
+
+.nav-bar a:hover {
+	/* color: #0b0132; */
+	color: #6100ff;
+}
+
 
 .main {
-  width: 80vw;
+  position: relative;
+  z-index: -10;
+  top: 20rem;
+  width: 80rem;
   margin: 0 auto;
   padding: 2rem;
   display: flex;
