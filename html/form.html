@@ -4,159 +4,89 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../css/form.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Formular</title>
 </head>
 
 <body>
 	<div class="header">
-		<div class="nav-wrapper">
-
-			<h1 id="nav-title"><a href="#">1MF1 - Herbst 2023</a></h1>
-	<!--
-			<div class="logo">
-				<img src="../bilder/navi-logo.svg" alt="logo navi" width="150">
+		<!-- <div class="logo"><h3>JNH-Logo</h3></div> -->
+	<div class="logo"> Logo Placeholder
+		
+		<svg id="logo-85" width="40" height="40" viewBox="0 0 40 40" 
+		fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path class="ccustom" fill-rule="evenodd" clip-rule="evenodd" d="M10 0C15.5228 0 20 4.47715 20 10V0H30C35.5228 0 40 4.47715 40 10C40 15.5228 35.5228 20 30 20C35.5228 20 40 24.4772 40 30C40 32.7423 38.8961 35.2268 37.1085 37.0334L37.0711 37.0711L37.0379 37.1041C35.2309 38.8943 32.7446 40 30 40C27.2741 40 24.8029 38.9093 22.999 37.1405C22.9756 37.1175 22.9522 37.0943 22.9289 37.0711C22.907 37.0492 22.8852 37.0272 22.8635 37.0051C21.0924 35.2009 20 32.728 20 30C20 35.5228 15.5228 40 10 40C4.47715 40 0 35.5228 0 30V20H10C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0ZM18 10C18 14.4183 14.4183 18 10 18V2C14.4183 2 18 5.58172 18 10ZM38 30C38 25.5817 34.4183 22 30 22C25.5817 22 22 25.5817 22 30H38ZM2 22V30C2 34.4183 5.58172 38 10 38C14.4183 38 18 34.4183 18 30V22H2ZM22 18V2L30 2C34.4183 2 38 5.58172 38 10C38 14.4183 34.4183 18 30 18H22Z" fill="#9911dd">
+		
+		</path></svg>
 			</div>
-	-->
-			<div class="nav-bar">
-			<ul>
-				<li><a href="./textuebung.html">Woche #1</a></li>
-				<li><a href="./float.html">Woche #2</a></li>
-				<li><a href="./bilder.html">Woche #3</a></li>
-				<li><a href="./pilatus-svg.html">Woche #4</a></li>
+		<div class="nav">
+			<ul class="links-container">
+				<li><a  href="../html/navi.html">Home</a></li>
+				<li><a href="../html/landing-page.html">Über mich</a></li>
+				<div class="dropdown">
+					<button class="dropbtn">Gallery <i class="fa fa-caret-down"></i> </button>
+					
+						
+				<ul class="dropdown-content"> 	
+					<li><a href="../html/textuebung.html">Woche 1-2</a></li>
+					<li><a  href="../html/float.html">Woche 2-3</a></li>
+					<li><a  href="../html/bilder.html">Woche 3-4</a></li>
+					<li><a href="../html/pilatus-svg.html">Woche 4-5</a></li>
+					<li><a class="active" href="../html/form.html">Woche 6-7</a></li>
+					<li><a href="../html/form2.html">Woche 8-9</a></li>
+				</ul>
 			</ul>
-			</div>
-
 		</div>
-
-		<div class="bee">
-			<img src="../bilder/bee.png" alt="Biene" width="100">
-		</div>
-
 	</div>
 	
 	<div class="wrapper">
-		<div class="form-content">
-		<div class="content-left">
-			<h1 class="title">Kontaktieren Sie uns!</h1>
-			<h2 class="subtitle">Wir helfen Ihnen den optimalen Wochenernährungsplan zu gestalten! </h2>
-		</div>
-		
-		<div class="content-right">
-			<form action="" method="post">
-			
-				<fieldset class="personalia">
-					<legend>Type Text:</legend>
-					<div>
-						<label for="fname">Vorname:</label>
-						<input type="text" name="firstname" placeholder="Maria" id="fname">
-					</div>
-					
-					<div>
-						<label for="sname">Familienname:</label>
-						<input type="text" name="surname" placeholder="Musterfrau" id="sname">
-					</div>
-					
-					<div>
-						<label for="email">E-Mail:</label>
-						<input type="email" placeholder="hello@email.com">
-					</div>
-					
-					
-					<div>
-						<label for="adress">Adresse:</label>
-						<input type="text"  name="adress" placeholder="Langegasse, 9" id="adress">
-					</div>
-					
-					<div class="zip-code">
-						<label for="zip">PLZ:</label>
-						 <select id="zip" name="plz">
-							 <option value="3100">3100</option>
-							 <option value="3102">3102</option>
-							 <option value="3103">3103</option>
-							 <option value="3104">3104</option>
-							 <option value="3106">3106</option>
-							 <option value="3107">3107</option>
-						</select>
-					
-					</div>
-				
-				</fieldset>
-					
-			
-				
-				<fieldset>
-					
-					<legend>Type Radio:</legend>
-					
-					<input type="radio" value="vegetarian" name="nutrition">
-					<label for="Vegetarian">Ich esse vegetarisch (Milchprdukte und Eier)</label><br>
-					
-					
-					<input type="radio" value="vegan" name="nutrition">
-					<label for="Vegan">Ich esse vegan</label><br>
-					
-					
-					<input type="radio" value="fruits" name="nutrition">
-					<label for="Fruits">Ich esse nur Obst und Gemüse</label><br>
-					
-					
-					<input type="radio" value="meat" name="nutrition">
-					<label for="Meat">Ich esse Fleisch</label><br>
-					
-				
-				</fieldset>
-				
-				<fieldset>
-					<legend>Type Checkbox:</legend>
-					<input type="checkbox" value="HTML">
-					<label for="html">HTML:</label>
-					
-					<input type="checkbox" value="CSS">
-					<label for="css">CSS:</label>
-					
-					<input type="checkbox" value="JavaScript">
-					<label for="javascript">JavaScript:</label>
-				
-				</fieldset>
-				
-				<fieldset>
-					<legend>Text Area</legend>
-					<label for="opinion"></label>
-					<textarea name="text" id="" cols="30" rows="10" class="textarea">Deine Meinung:</textarea>
-				
-				</fieldset>
-				
-				<fieldset>
-					<legend>Einwilligung - Checkbox</legend>
-					  <div>
-						<p>Ich stimme den Allgemein Geschäftsbedingungen der XY AG zu.</p>
-						<input type="checkbox" id="coding" name="permission-1" value="yes" />
-						<label for="yes">Ja</label>
+		<div class="content">
+		<h2>Jaqueline, passionate about Webdevelopment and Digital Solutions</h2>
+	  
+		<h1><span>LBS - St. Pölten</span></h1>
+		<h1>Medienfach - Webdevelopment</h1>
+	  </div>
+	  
+	  <form action="" methode="post">
+		<h2 class="title">Get in Touch</h2>
+		<ul>
+		  <li>
+			<label for="name">Name</label>
+			<input type="text" id="name" name="user_name" placeholder="Your Name">
+		  </li>
+		  
+		  <li>
+			<label for="mail">E-Mail</label>
+			<input type="email" id="mail" name="user_mail" placeholder="Your E-Mail">
+		  </li>
 
-					  </div>
-					
-					  <div>
-						<p>Ich habe die Datenschutzinformation der XY AG zur Kenntnis genommen. SOfern sich die Datenverarbeitung auf eine Einwilling stützt, werden Sie vorgängig um Erlaubnis gefragt.Ein Widerruf der Zustimmung ist jederzeit für die Zukunft möglich. </p>
-						<input type="checkbox" id="music" name="permission-2" value="yes" />
-						<label for="yes">Ja</label>
-					  </div>
-				</fieldset>
-				
-				<button class="submit-btn" type="submit">
-					absenden
-				</button>
-			
-			<div class="thankYou">
-				<div class="thankYou-content hidden">
-					<h1>Vielen Dank für den Kontakt!</h1>
-					<h2>Wir melden uns bei Ihnen in den nächsten Tagen zurück</h2>
-				</div>
-			</div>
-		</form>
-		</div>
-		
-		</div>	
-	</div>
+		  <li>
+			<label for="subject">Subject</label>
+			<input type="text" id="subject" name="subject_mail" placeholder="Subject">
+		  </li>
+		  
+		  <li>
+			<label for="msg">Message</label>
+			<textarea id="msg" name="user_message" placeholder="Your Message"></textarea>
+		  </li>
+		  <div class="button">
+			<button type="submit">Send your message!</button>
+		  </div>
+		</ul>
+	  </form>
+	  </div>
+	  
+	  
+	  
+	  <div class="footer">
+		<ul>
+		  <li>Kontakt</li>
+		  <li>Impressum</li>
+		  <li>Social Media</li>
+		</ul>
+	  </div>
+
+
 	<script src="../js/form.js" type="text/javascript"></script>
 </body>
 </html>

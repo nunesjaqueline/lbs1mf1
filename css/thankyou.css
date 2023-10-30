@@ -15,20 +15,23 @@ body {
   font-family: "Inter", sans-serif;
   max-width: 1240px;
   margin: 0 auto;
+  background-image: url('../bilder/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 h1 {
-	font-family: 'Young Serif', serif;
-	font-size: 4rem;
-	font-weight: 900;
-	color: #444;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #444;
 }
 
 h2 {
-	font-family: "Inter", sans-serif;
-	font-weight: 900;
-	font-size: 1.5rem;
-	color: #555;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #555;
 }
 
 span {
@@ -121,72 +124,61 @@ span {
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+    background-color: #ddd;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
-  padding-left: 0;
+    display: block;
+    padding-left: 0;
 }
 
-.hero-wrapper {
-	position: relative;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+.container {
+    margin: 0 auto;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.hero-wrapper::before {
-	content: "";
-	position: absolute; 
-	top: 0;
-	width: 100vw;
-	height: 100vh;
-	background: url("../bilder/hero_2.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	z-index: -1;
+
+
+.text {
+    background-color: rgba(255,255, 255,0.6);
+    padding: 2rem;;
 }
 
-.hero-content {
-	position: absolute;
-	padding: 2rem 4rem;
-	top: 10rem;
-	text-align: center;
-	margin: 0.65rem;
-	background-color: rgba(255,255,255,0.6);
+.text h1 {
+    color: #ff008c;
 }
 
-.hero-title {
-	font-size: 3rem;
-	font-weight: 600;
-	margin-bottom: 0;
-	color: #ff008c;
+.buy {
+  width: 20rem;
 }
 
-.hero-subtitle {
-	font-size: 2rem;
-	font-weight: 900;
-	margin-top: 1rem;
-	color: #000;
+.buy img {
+  width: 100%;
 }
 
-.hero-button {
-	font-family: 'Lato', sans-serif;
-	text-transform: uppercase;
-	border: 2px solid #ff008c;
-	border-radius: 4px;
-	background-color: transparent;
-	color: #ff008c;
-	font-size: 1rem;
-	font-weight: 700;
-	padding: 1rem;
-	transition: all .5s ease;
+.buy:hover img {
+  transform: rotate(15deg);
 }
 
-.hero-button:hover, .hero-button:active {
-	background-color: #EBBABB;
-	/* transition: all .5s ease-in-out; */
+.footer {
+	height: 20px;
+	margin-top: 20rem;
+	margin: 0 auto;
+    background-color: #4c4c4c;
+    color: #fff;
 }
+
+.footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+

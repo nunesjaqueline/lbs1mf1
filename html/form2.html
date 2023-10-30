@@ -1,46 +1,135 @@
-
 <!doctype html>
 <html>
 <head>
 <meta charset="UTF-8">
-	<link rel="stylesheet" href="../css/form2.css" type="text/css">
-<title>form2</title>
+<title>Navigation Übung</title>
+<link href="../css/form2.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-	<div class="container">
 	
-		<div class="content">
-			<h1>Kontakt</h1>
-			<h2>Wir freuens uns auf Deine Nachchricht!</h2>
-		</div>
-
-
-		<form action="" methode="post">
-		<div>
-			<label for="name" id="name">Dein Name</label>
-			<input type="text" placeholder="name">
-		</div>
-
-		<div>
-			<label for="adress" id="adress">Deine Adresse</label>
-			<input type="text" placeholder="Langegasse">
-		</div>
-
-		<div>
-			<label for="email" id="email">Deine E-Mail</label>
-			<input type="email" placeholder="abc@gmail.com">
-		</div>
-		<label for="message">Lass uns eine Nachricht</label>
-		<textarea name="message" id="msg" cols="30" rows="10"></textarea>
+	<div class="header">
+   <!-- <div class="logo"><h3>JNH-Logo</h3></div> -->
+	<div class="logo"> Logo Placeholder
 		
-		<div class="button">
-    		<button type="submit" value="Subscribe!" />
-  		</div>
-
-		</form>
-
+		<svg id="logo-85" width="40" height="40" viewBox="0 0 40 40" 
+		fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path class="ccustom" fill-rule="evenodd" clip-rule="evenodd" d="M10 0C15.5228 0 20 4.47715 20 10V0H30C35.5228 0 40 4.47715 40 10C40 15.5228 35.5228 20 30 20C35.5228 20 40 24.4772 40 30C40 32.7423 38.8961 35.2268 37.1085 37.0334L37.0711 37.0711L37.0379 37.1041C35.2309 38.8943 32.7446 40 30 40C27.2741 40 24.8029 38.9093 22.999 37.1405C22.9756 37.1175 22.9522 37.0943 22.9289 37.0711C22.907 37.0492 22.8852 37.0272 22.8635 37.0051C21.0924 35.2009 20 32.728 20 30C20 35.5228 15.5228 40 10 40C4.47715 40 0 35.5228 0 30V20H10C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0ZM18 10C18 14.4183 14.4183 18 10 18V2C14.4183 2 18 5.58172 18 10ZM38 30C38 25.5817 34.4183 22 30 22C25.5817 22 22 25.5817 22 30H38ZM2 22V30C2 34.4183 5.58172 38 10 38C14.4183 38 18 34.4183 18 30V22H2ZM22 18V2L30 2C34.4183 2 38 5.58172 38 10C38 14.4183 34.4183 18 30 18H22Z" fill="#9911dd">
+		
+		</path></svg>
+			</div>
+    <div class="nav">
+      	<ul class="links-container">
+			<li><a href="../html/navi.html">Home</a></li>
+			<li><a href="../html/landing-page.html">Über mich</a></li>
+			<div class="dropdown">
+				<button class="dropbtn">Gallery <i class="fa fa-caret-down"></i> </button>
+				
+					
+			<ul class="dropdown-content"> 	
+				<li><a href="../html/textuebung.html">Woche 1-2</a></li>
+				<li><a  href="../html/float.html">Woche 2-3</a></li>
+				<li><a href="../html/bilder.html">Woche 3-4</a></li>
+				<li><a href="../html/pilatus-svg.html">Woche 4-5</a></li>
+				<li><a href="../html/form.html">Woche 6-7</a></li>
+				<li><a class="active" href="../html/form2.html">Woche 8-9</a></li>
+			</ul>
+		</ul>
+    </div>
 	</div>
+
+	<div class="main">
+
+	<div class="wrapper">
+
+		<div class="content">
+			<h2><span>Do you want to rescue a pup?</span></h2>
+			<h1>Reach us out and adopt a pet.</h1>
+		</div>
+
+		<div class="image">
+			
+		</div>
+		<div class="form">
+			
+			<form action="#" method="post">
+				<h2>Tell us about you!</h2>
+				<div class="field">
+					<label for="name">Full Name</label>
+					<input type="text" name="name" id="name" placeholder="Tell us your name">
+				</div>
+
+				<div class="field">
+					<label for="birthday">Birthday:</label>
+  					<input type="date" id="birthday" name="birthday">
+				</div>
+				<div class="field">
+					<label for="mail">Email Adress</label>
+					<input type="email" name="mail" id="mail" required placeholder="Your email adress">
+				</div>
+
+				<div class="field">
+					<label for="city">City</label>
+					<input type="text" name="city" id="city" required placeholder="Where do you live?">
+				</div>
+
+				<div class="field">
+					<label for="cars">Which kind of a pet are you looking for?</label>
+						<select id="pets" name="pets">
+							<option value="dog">Dog</option>
+							<option value="cat">Cat</option>
+							<option value="bird">Bird</option>
+							<option value="fish">Fisch</option>
+							<option value="turtle">Turtle</option>
+						</select>
+				</div>
+
+				<div class="field radio">
+					<h2>Do you have yard?</h2>
+					<div class="option">
+						<input type="radio" id="yard" name="yard" value="yes">
+						<label for="yard">Yes</label>
+					</div>
+					<div class="option">
+						<input type="radio" id="no-yard" name="yard" value="no">
+						<label for="no-yard">No</label>
+					</div>
+				</div>
+
+				<div class="btnsubmit">
+						<button class="submit" type="submit">Submit</button>
+				</div>
+			</form>
+		</div>
+	
+		  
+
+  	</div>
+	  	 
+	  
+	  <div class="footer">
+      <ul>
+        <li>Kontakt</li>
+        <li>Impressum</li>
+        <li>Social Media</li>
+      </ul>
+	  </div>
+	</div>
+	
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	
+<script src="../js/form2.js">
+	
+</script>
+	
+
 	
 </body>
 </html>

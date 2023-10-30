@@ -1,114 +1,177 @@
 @charset "UTF-8";
 /* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;900&family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&family=Young+Serif&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 body {
-	margin: 0;
-	padding: 0;
-	font-family: 'Rubik', sans-serif;
+  font-family: "Inter", sans-serif;
+  max-width: 1240px;
+  margin: 0 auto;
 }
 
 h1 {
-	font-weight: 100;
-	font-size: 3rem;
-	font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #444;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+span {
+  text-transform: uppercase;
 }
 
 .header {
-	top: 0;
-	position: fixed;
+	height: 80px;
+	max-width: inherit;
 	width: 100%;
-	z-index: 1000;
-}
-
-.nav-wrapper {
-	margin: 0 auto;
-	max-width: 1670px;
+	position: fixed;
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-end;  
+	justify-content: space-between;
 	align-items: center;
-	padding: 20px 50px;
+	top: 0;
 	background-color: #fff;
-	border-bottom: 2px solid #3c345b;
-	box-shadow: 0 1px 8px #ddd;
-	text-transform: uppercase;
-}
-
-.bee {
+	z-index: 1000;
+  }
+  
+  .logo {
+	padding-left: 2rem;
+  }
+  
+  .nav {
+	padding-right: 2rem;
+  }
+  
+  .links-container {
+	  display: flex;
+	  flex-direction: row;
+	  align-items: center;
+	  gap: 50px;
+  }
+  
+  .header .nav .links-container li {
+	  list-style: none;
+  }
+  
+  .dropbtn {
+	border: none;
+	background-color: transparent;
+  }
+  
+  .header .nav .links-container li a, .dropbtn {
+	  display: block;
+	  color: #4c4c4c;
+	  font-size: 14px;
+	text-align: center;
+	  text-transform: uppercase;
+	  font-weight: 900;
+	  text-decoration: none;
+	  padding: .5rem .75rem;
+	border-radius: 14px;
+  }
+  
+  .header .nav .links-container li a:hover:not(.active), .dropdown:hover .dropbtn {
+	color: #fff;
+	  background-color: #9911dd;
+	  text-decoration: underline;
+	  text-decoration-color: #fff;
+  }
+  
+  .header .nav .links-container li .active {
+	color: #fff;
+	background-color: #9911dd;
+  }
+  
+  .dropdown {
+	overflow: hidden;
+  }
+  
+  .dropdown-content {
+	display: none;
+	justify-content: flex-start;
 	position: absolute;
-	left: 33rem;
-	top: 2rem;
-	right: 75%;
-	width: 10px;
-	z-index: 10;
-}
+	background-color: none;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+	background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+	display: block;
+	padding-left: 0;
+  }
 
-
-
-#nav-title {
-    margin-right: auto;
-    font-size: 1.5em;
-}
-
-.nav-wrapper li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 20px;
-}
-
-.nav-wrapper a {
-    text-decoration: none;
-    color: #3c345b;
-    transition: all 0.3s ease 0s;
-}
-
-.nav-wrapper a:hover {
-    color: #0b0132;
-}
-
-.nav-wrapper a:visited {
-	color: #3c345b;
-}
-
-.nav-bar a:hover {
-	color: #0b0132;
-}
-
-.desing-element {
-	width: 100vw;
-    height: 100vh;
+.design-element {
+	width: 100%;
+	height: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
+	position: relative;
 }
 
 .design-element::before {
 	content: '';
-	background-image: url("../bilder/spalten-links.png");
+	background-image: url("../bilder/apfel-rot.png");
 	background-repeat: no-repeat;
 	position: absolute;
-	opacity: 0.3;
-	margin-top: 20rem;
-	/*left: 0px;*/
-	width: 100vw;
-	height: 100vh;
+	opacity: 0.6;
+	left: 0px;
+	width: 100%;
+	height: 100%;
 	z-index: -1;
+	
 }
 
 .hero {
-	margin-top: 10rem;
-	margin-left:  auto;
-	margin-right: auto;
-	background-image: url("../bilder/apfel.png");
-	background-repeat: repeat;
+	margin-top: 5rem;
+  	margin-bottom: 5rem;
+	position: relative;
 	width: 100%;
-	height: 50vh;
+	height: 30rem;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+  	background-color: #2bc016; 
+	transform: rotate(0deg);
+	border-radius: 0rem 20rem 0rem 20rem;
+}
+
+.hero::before {
+	content:"";	
+	background-image: url("../bilder/apfel.png");
+	background-repeat: repeat;
+	background-position: center;
+	position: absolute;
+	width:100%;
+	height: 100%;
+	inset: 0;
 }
 
 .hero > .cover {
@@ -121,18 +184,23 @@ h1 {
  	background-color: rgba(255, 255, 255, 0.45);
   	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
   	backdrop-filter: blur(15px);
+  	color: #2bc016;
 }
 
 .cta-wrapper{
 	width: 100%;
-	margin-top: 4rem;
-	padding: 2rem;
-	background-color: #B5ED0A;
+	height: 24rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #a1e887;
+    
 }
 
 .cta {
 	margin: 0 auto;
-	width: 48rem;
+	width: 40rem;
 	height: 20rem;
 	border-radius: .75rem;
 	display: flex;
@@ -143,46 +211,48 @@ h1 {
 	background-repeat: no-repeat;
 	/*background-color: #B5ED0A;*/
 /*	background-color: rgb(181,237,10);*/
-	background-color: #77a741;
+	background-color: #2bc016;
 }
 
-
-
 .cta-content {
-	height: 50%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+  	color: #fff;
 }
 
 .btn-primary {
 	width: 10rem;
 	padding: 1rem;
 	border-radius: .75rem;
-	background-color: #fff;
+	border: 2px solid #a1e887;
 	font-weight: 700;
-	border-style: none;
+  	background-color: #2bc016;
 }
 
-.btn-primary:hover {
-	background-color: #77a741;
+.btn-primary:hover,
+.btn-primary:active {
+	background-color: #a1e887;
+  	transition-duration: background-color .7s ease-in-out;
+	cursor: pointer;
 }
 
 .circles-wrapper {
-	margin-top: 4rem;
+  	width: 100%;
+	height: 24rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+  	color: #2bc016;
 }
 
 .circles {
 	margin: 0 auto;
-	padding-top: 4rem;
 	display: flex;
 	justify-content: space-around;
-	width: 100vw;
+	width: 100%;
 	height: 30vh;
 }
 
@@ -193,13 +263,14 @@ h1 {
 	justify-content: center;
 	align-items: center;
 	border-radius: 50%;
-	background-color: rgba(181,237,10,.5);
+	background-color: #a1e887;
 }
 
 
 .circle:hover {
 	transform: rotate(360deg);
 	transition: 0.9s ease-in-out;
+	cursor: pointer;
 }
 
 .img-text-wrapper {
@@ -210,12 +281,20 @@ h1 {
 	justify-content: center;
 	align-items: center;
 	background-image: url("../bilder/apfel-gruen.png");
-	background-color: #B5ED0A;
+	background-color: #2bc016;
 }
 
 .text-img {
 	width: 25%;
 	margin-right: 2rem;
+  	color: #fff;
 }
 
+.footer ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+  }
 
