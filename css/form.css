@@ -152,8 +152,14 @@ span, .title {
 }
 
 
+.form {
+	display: flex;
+	flex-direction: column;
+	/* background-color: #ccc; */
+}
+
 form {
-	width: 50%;
+	/* width: 50%; */
 	padding: 2rem;
 	margin-bottom: 2rem;
 	border: 3px solid #9911dd;
