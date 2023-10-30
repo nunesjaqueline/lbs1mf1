@@ -176,6 +176,12 @@ form {
 	text-align: right;
 	color: #444;
   }
+
+  .required label:after {
+    color: #9911dd;
+    content:"*";
+    display: inline;
+  }
   
   input,
   textarea {
@@ -218,5 +224,22 @@ form {
 	border: 2px solid #9911dd;
 	background-color: #fff;
 	transform: rotate(5deg);
-  }
+}
+
+
+.footer {
+	height: 20px;
+	margin-top: 20rem;
+	margin: 0 auto;
+  /* background-color: #fff; */
+  color: #4c4c4c;
+}
+
+.footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
 
