@@ -153,6 +153,7 @@ span, .title {
 
 
 .form {
+  width: 50%;
 	display: flex;
 	flex-direction: column;
 	/* background-color: #ccc; */
